@@ -1,0 +1,32 @@
+
+> minesweeper@1.0.0 build-storybook
+> storybook build --output-dir C:\Users\varis\AppData\Local\Temp\chromatic--37068-SVAY4wIbo5z3
+
+@storybook/cli v7.6.17
+
+info => Cleaning outputDir: C:\Users\varis\AppData\Local\Temp\chromatic--37068-SVAY4wIbo5z3
+info => Loading presets
+info => Building manager..
+info => Manager built (147 ms)
+info => Building preview..
+info => Copying static files: D:\Courses\Udemy\React\Nick Ovchinnikov\minesweeper\node_modules\@storybook\manager\static at C:\Users\varis\AppData\Local\Temp\chromatic--37068-SVAY4wIbo5z3\sb-common-assets
+WARN No story files found for the specified pattern: src\**\*.mdx
+info Using SWC compiler
+info Addon-docs: using MDX2
+info => Using implicit CSS loaders
+info => Using default Webpack5 setup
+WARN asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+WARN This can impact web performance.
+WARN Assets: 
+WARN   71.31339d20.iframe.bundle.js (581 KiB)
+WARN   906.b539f40c.iframe.bundle.js (956 KiB)
+WARN   216.c11fda91.iframe.bundle.js (724 KiB)
+WARN entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+WARN Entrypoints:
+WARN   main (968 KiB)
+WARN       runtime~main.3650d48d.iframe.bundle.js
+WARN       906.b539f40c.iframe.bundle.js
+WARN       main.4f4ae773.iframe.bundle.js
+WARN 
+info => Preview built (5.44 s)
+info => Output directory: C:\Users\varis\AppData\Local\Temp\chromatic--37068-SVAY4wIbo5z3

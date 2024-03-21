@@ -4,6 +4,6 @@ export interface GameNameProps {
   children: string;
 }
 
-export const GamaName = styled.h1`
+export const GameName = styled.h1`
   font-size: 2em;
 `;

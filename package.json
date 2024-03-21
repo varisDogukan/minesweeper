@@ -11,13 +11,16 @@
     "serve": "webpack serve --mode=development",
     "test": "jest",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=chpt_a0b2ccea8ad28f9"
   },
   "keywords": [
     "React",
     "Redux"
   ],
-  "author": "varisDogukan",
+  "author": {
+    "name": "varisDogukan"
+  },
   "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.23.9",
