@@ -1,6 +1,20 @@
 import React from "react";
-import "./App.css";
+
+import Top from "./components/Top/Top";
+import { Scoreboard } from "./components/Scoreboard";
 
 export default function App() {
-  return <>asdasd</>;
+  return (
+    <>
+      <Top feature='Flag' firstAction='ctrl' secondAction='click'>
+        Minesweeper
+      </Top>
+      <Scoreboard
+        time='000'
+        levels={["begginer", "intermediate", "expert"]}
+        mines='010'
+        onReset={() => null}
+      />
+    </>
+  );
 }

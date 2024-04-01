@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GameName renders correctyle 1`] = `
+<DocumentFragment>
+  <legend
+    class="css-17qz6a2"
+  >
+    <strong>
+      Flag: 
+    </strong>
+    <code
+      class="css-h9xasx"
+    >
+      <span
+        class="css-udfepp"
+      >
+        Ctrl
+      </span>
+       + 
+      <span
+        class="css-9c23k1"
+      >
+        Click
+      </span>
+    </code>
+  </legend>
+</DocumentFragment>
+`;

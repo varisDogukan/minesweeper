@@ -14,9 +14,9 @@ type Story = StoryObj<TopComponentType>;
 export const GameLegend: Story = {
   render: (args: any) => <Top {...args} />,
   args: {
-    children: "minesweeper",
+    children: "Minesweeper",
     feature: "Flag",
-    firstAction: "ctrl",
-    secondAction: "click",
+    firstAction: "Ctrl",
+    secondAction: "Click",
   },
 };

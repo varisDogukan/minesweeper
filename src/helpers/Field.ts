@@ -8,8 +8,8 @@ export const CellState: Record<string, Cell> = {
   empty: 0,
   bomb: 9,
   hidden: 10,
-  mark: 11,
-  weakMark: 12,
+  flag: 11,
+  weakFlag: 12,
 };
 
 export function emptyFieldGenerator(
@@ -31,8 +31,6 @@ export function fieldGenerator(size: number, probability: number): Field {
 
   for (let y = 0; y < size; y++) {
     for (let x = 0; x < size; x++) {
-      if (restCellsWithBombs === 0) return result;
-
       if (restCellsWithBombs / unprocessedCells > Math.random()) {
         result[y][x] = CellState.bomb;
         incrementNeibours([y, x], result);
