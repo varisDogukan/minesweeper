@@ -7,7 +7,7 @@ describe("useMouseDown hook test", () => {
 
     const [mouseDown, onMouseDown, onMouseUp] = result.current;
 
-    expect(mouseDown).toBe(2);
+    expect(mouseDown).toBe(false);
 
     act(onMouseDown);
     expect(result.current[0]).toBe(true);
