@@ -1,0 +1,250 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cell component check Cell Frame renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="css-qv4ty6"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell component check Cell Frame renders correctly 2`] = `
+<DocumentFragment>
+  <div
+    class="css-qv4ty6"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell component check Cell Frame renders correctly 3`] = `
+<DocumentFragment>
+  <div
+    class="css-qv4ty6"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell component check Cell Frame renders correctly 4`] = `
+<DocumentFragment>
+  <div
+    class="css-qv4ty6"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell component check Cell Frame renders correctly 5`] = `
+<DocumentFragment>
+  <div
+    class="css-qv4ty6"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell component check Cell Frame renders correctly 6`] = `
+<DocumentFragment>
+  <div
+    class="css-qv4ty6"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell component check Cell Frame renders correctly 7`] = `
+<DocumentFragment>
+  <div
+    class="css-qv4ty6"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell component check Cell Frame renders correctly 8`] = `
+<DocumentFragment>
+  <div
+    class="css-qv4ty6"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell component check Cell Frame renders correctly 9`] = `
+<DocumentFragment>
+  <div
+    class="css-qv4ty6"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell component check Cell Frame renders correctly 10`] = `
+<DocumentFragment>
+  <div
+    class="css-qv4ty6"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell component check Cell Frame renders correctly 11`] = `
+<DocumentFragment>
+  <div
+    class="css-qv4ty6"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell component check Cell Frame renders correctly 12`] = `
+<DocumentFragment>
+  <div
+    class="css-qv4ty6"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell component check Cell Frame renders correctly 13`] = `
+<DocumentFragment>
+  <div
+    class="css-qv4ty6"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell component check Cell renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="css-1gv950s"
+    data-testid="0_1,1"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell component check Cell renders correctly 2`] = `
+<DocumentFragment>
+  <div
+    class="css-1n0ncjp"
+    data-testid="1_1,1"
+  >
+    1
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Cell component check Cell renders correctly 3`] = `
+<DocumentFragment>
+  <div
+    class="css-1h5yygc"
+    data-testid="2_1,1"
+  >
+    2
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Cell component check Cell renders correctly 4`] = `
+<DocumentFragment>
+  <div
+    class="css-bw3ns5"
+    data-testid="3_1,1"
+  >
+    3
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Cell component check Cell renders correctly 5`] = `
+<DocumentFragment>
+  <div
+    class="css-1b4z6ax"
+    data-testid="4_1,1"
+  >
+    4
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Cell component check Cell renders correctly 6`] = `
+<DocumentFragment>
+  <div
+    class="css-1ogd0fl"
+    data-testid="5_1,1"
+  >
+    5
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Cell component check Cell renders correctly 7`] = `
+<DocumentFragment>
+  <div
+    class="css-17u021h"
+    data-testid="6_1,1"
+  >
+    6
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Cell component check Cell renders correctly 8`] = `
+<DocumentFragment>
+  <div
+    class="css-xw24l6"
+    data-testid="7_1,1"
+  >
+    7
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Cell component check Cell renders correctly 9`] = `
+<DocumentFragment>
+  <div
+    class="css-skduyf"
+    data-testid="8_1,1"
+  >
+    8
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Cell component check Cell renders correctly 10`] = `
+<DocumentFragment>
+  <div
+    class="css-arhbjg"
+    data-testid="9_1,1"
+  >
+    <div
+      class="css-3tubcw"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Cell component check Cell renders correctly 11`] = `
+<DocumentFragment>
+  <div
+    class="css-hczdls"
+    data-testid="10_1,1"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell component check Cell renders correctly 12`] = `
+<DocumentFragment>
+  <div
+    class="css-hczdls"
+    data-testid="11_1,1"
+  >
+    <div
+      class="css-xf858y"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Cell component check Cell renders correctly 13`] = `
+<DocumentFragment>
+  <div
+    class="css-hczdls"
+    data-testid="12_1,1"
+  >
+    <div
+      class="css-qmyrbn"
+    />
+  </div>
+</DocumentFragment>
+`;
