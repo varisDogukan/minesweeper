@@ -9,6 +9,7 @@ const config = {
   testRunner_comment:
     "Take a look at https://stryker-mutator.io/docs/stryker-js/jest-runner for information about the jest plugin.",
   coverageAnalysis: "perTest",
+  thresholds: { high: 90, low: 80, break: 85 },
   mutate: [
     "src/**/*.ts?(x)",
     "!src/**/*@(.test|.spec|Spec|stories|styled).ts?(x)",
