@@ -1,0 +1,28 @@
+name: CI
+
+on: 
+  push: 
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+  workflow_dispatch:
+
+jobs: 
+  test_and_build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Tests
+        run: npm test
+
+      - name: Build
+        run : npm run build
+
+      - name: Stryker-Mutator
+        run : npm run test:mutate
+
+      - name: Chromatic
+        run : npm run chromatic
