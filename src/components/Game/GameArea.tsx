@@ -14,6 +14,7 @@ export const GameArea: FC<GameAreaProps> = ({ children }) => (
 
 const Frame = styled.div`
   display: flex;
+  padding-top: 1vw;
   align-items: center;
   justify-content: center;
   flex-direction: column;
