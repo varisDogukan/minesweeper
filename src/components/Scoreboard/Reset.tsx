@@ -21,6 +21,7 @@ export default function Reset({ onReset }: ResetProps) {
 }
 
 const Button = styled.button`
+  padding: 5px 10px;
   font-size: 20px;
   cursor: pointer;
   font-weight: 700;

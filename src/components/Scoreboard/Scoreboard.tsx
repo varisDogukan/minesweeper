@@ -8,22 +8,28 @@ import Reset from "./Reset";
 export interface ScoreboardProps {
   time: string;
   levels: string[];
+  defaultLevel?: string;
+  onChangeLevel: (event: React.ChangeEvent<HTMLSelectElement>) => void;
   onReset: () => void;
-  mines: string;
+  bombs: string;
 }
 
 export default function Scoreboard({
   levels,
-  mines,
+  bombs,
   onReset,
+  defaultLevel,
+  onChangeLevel: onChange,
   time,
 }: ScoreboardProps) {
   return (
     <Wrapper>
       <Counter>{time}</Counter>
-      <Level>{levels}</Level>
+      <Level value={defaultLevel} onChange={onChange}>
+        {levels}
+      </Level>
       <Reset onReset={onReset} />
-      <Counter>{mines}</Counter>
+      <Counter>{bombs}</Counter>
     </Wrapper>
   );
 }
@@ -31,6 +37,6 @@ export default function Scoreboard({
 const Wrapper = styled.div`
   display: flex;
   width: max-content;
-  padding-bottom: 2vw;
+  padding-bottom: 10px;
   justify-content: space-between;
 `;

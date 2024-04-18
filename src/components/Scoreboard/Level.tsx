@@ -3,11 +3,13 @@ import styled from "@emotion/styled";
 
 export interface LevelProps {
   children: string[];
+  value?: string;
+  onChange: (event: React.ChangeEvent<HTMLSelectElement>) => void;
 }
 
-export default function Level({ children }: LevelProps) {
+export default function Level({ children, ...props }: LevelProps) {
   return (
-    <Select>
+    <Select {...props}>
       {children.map((item: string) => (
         <Option value={item} key={React.useId()}>
           {item}
@@ -18,7 +20,7 @@ export default function Level({ children }: LevelProps) {
 }
 
 const Select = styled.select`
-  padding: 5px;
+  padding: 5px 10px;
   border-radius: 0;
   border: none;
   background-color: #d1d1d1;

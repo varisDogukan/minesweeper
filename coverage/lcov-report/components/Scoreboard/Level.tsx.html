@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for components/Scoreboard/Reset.tsx</title>
+    <title>Code coverage report for components/Scoreboard/Level.tsx</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -19,7 +19,7 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">components/Scoreboard</a> Reset.tsx</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">components/Scoreboard</a> Level.tsx</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
@@ -30,16 +30,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>1/2</span>
+                <span class='fraction'>0/0</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
@@ -94,7 +94,11 @@
 <a name='L29'></a><a href='#L29'>29</a>
 <a name='L30'></a><a href='#L30'>30</a>
 <a name='L31'></a><a href='#L31'>31</a>
-<a name='L32'></a><a href='#L32'>32</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -106,14 +110,13 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
@@ -123,38 +126,47 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from "react";
 import styled from "@emotion/styled";
 &nbsp;
-import { useMouseDown } from "@/hooks/useMouseDown";
-&nbsp;
-export interface ResetProps {
-  onReset: () =&gt; void;
+export interface LevelProps {
+  children: string[];
+  value?: string;
+  onChange: (event: React.ChangeEvent&lt;HTMLSelectElement&gt;) =&gt; void;
 }
 &nbsp;
-export default function Reset({ onReset }: ResetProps) {
-  const [mouseDown, onMouseDown, onMouseUp] = useMouseDown();
-&nbsp;
-  const events = {
-    onMouseDown: onMouseDown,
-    onMouseUp: onMouseUp,
-    onMouseLeave: onMouseUp,
-    onClick: onReset,
-  };
-&nbsp;
-  return &lt;Button {...events}&gt;{mouseDown ? <span class="branch-0 cbranch-no" title="branch not covered" >"😐" </span>: "😌"}&lt;/Button&gt;;
+export default function Level({ children, ...props }: LevelProps) {
+  return (
+    &lt;Select {...props}&gt;
+      {children.map((item: string) =&gt; (
+        &lt;Option value={item} key={React.useId()}&gt;
+          {item}
+        &lt;/Option&gt;
+      ))}
+    &lt;/Select&gt;
+  );
 }
 &nbsp;
-const Button = styled.button`
+const Select = styled.select`
   padding: 5px 10px;
-  font-size: 20px;
-  cursor: pointer;
-  font-weight: 700;
+  border-radius: 0;
   border: none;
-  border-left: 1px solid #e0e0e0;
   background-color: #d1d1d1;
+`;
+&nbsp;
+const Option = styled.option`
+  font-weight: normal;
+  display: block;
+  white-space: nowrap;
+  min-height: 1.2em;
+  padding: 0 0.2vw 0.2vw;
 `;
 &nbsp;</pre></td></tr></table></pre>
 

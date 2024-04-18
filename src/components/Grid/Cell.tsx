@@ -38,6 +38,7 @@ export default function Cell({ children, coords, ...rest }: CellProps) {
     onMouseLeave: onMouseUp,
     mouseDown,
     "data-testid": `${children}_${coords}`,
+    role: "cell",
   };
 
   return <ComponentsMap {...props}>{children}</ComponentsMap>;
@@ -103,8 +104,8 @@ export const ClosedFrame = styled.div<ClosedFrameProps>`
   justify-content: center;
   user-select: none;
   cursor: pointer;
-  width: 1.8vw;
-  height: 1.8vw;
+  width: 20px;
+  height: 20px;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
   border-color: ${({ mouseDown = false }) =>
@@ -145,8 +146,8 @@ const RevealedFrame = styled(ClosedFrame)`
 
 const Bomb = styled.div`
   border-radius: 50%;
-  width: 1vw;
-  height: 1vw;
+  width: 10px;
+  height: 10px;
   background-color: #333;
 `;
 
@@ -155,8 +156,8 @@ const BombFrame = styled(RevealedFrame)`
 `;
 
 const Flag = styled.div`
-  width: 0px;
-  height: 0pxw;
+  width: 5px;
+  height: 5px;
   border-top: 0.5vw solid transparent;
   border-bottom: 0.5vw solid transparent;
   border-left: 0.5vw solid #ec433c;

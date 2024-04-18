@@ -12,6 +12,19 @@ export const CellState: Record<string, Cell> = {
   weakFlag: 12,
 };
 
+/**
+ * Create empty field
+ *
+ * Example emptyFieldGenerator(2)
+ * [
+ *  [0, 0],
+ *  [0, 0]
+ * ]
+ *
+ * @param {number} size
+ * @param {Cell} state
+ * @returns {Field}
+ */
 export function emptyFieldGenerator(
   size: number,
   state: Cell = CellState.empty

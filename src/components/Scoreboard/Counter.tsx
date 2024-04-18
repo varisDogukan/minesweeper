@@ -10,7 +10,9 @@ export default function Counter({ children }: CounterProps) {
 }
 
 const Frame = styled.div`
-  padding: 5px;
+  padding: 5px 10px;
+  display: grid;
+  place-content: center;
   color: #ec433c;
   background: #333;
   text-shadow: 0 0 0.1vw #ec433c;

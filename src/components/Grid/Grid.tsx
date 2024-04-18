@@ -33,5 +33,5 @@ const Wrapper = styled.div<WrapperProps>`
   display: grid;
   grid-template-columns: repeat(${({ size }) => size}, auto);
   width: max-content;
-  padding: 1vw;
+  padding: 10px;
 `;

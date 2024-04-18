@@ -25,13 +25,13 @@ const Frame = styled.div<FrameProps>`
   top: 60%;
   left: 50%;
   z-index: 11;
-  width: 8vw;
-  height: 8vw;
-  font-size: 4vw;
+  width: 80px;
+  height: 80px;
+  font-size: 50px;
   text-align: center;
   user-select: none;
   cursor: pointer;
-  line-height: 8vw;
+  line-height: 80px;
   position: absolute;
   border-radius: 50%;
   pointer-events: auto;
