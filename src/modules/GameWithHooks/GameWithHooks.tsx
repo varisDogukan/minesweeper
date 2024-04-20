@@ -1,7 +1,7 @@
 import React from "react";
 
 import {
-  emptyFieldGenerator,
+  generateFieldWithDefaultState,
   CellState,
   fieldGenerator,
   Coords,
@@ -20,7 +20,7 @@ export default function GameWithHooks() {
   const [size, bombs] = GameSettings[level];
 
   const [playerField, setPlayerField] = React.useState<Field>(
-    emptyFieldGenerator(size, CellState.hidden)
+    generateFieldWithDefaultState(size, CellState.hidden)
   );
 
   const gameField = React.useMemo(
@@ -39,7 +39,10 @@ export default function GameWithHooks() {
     setLevel(level as LevelNames);
     const [size] = GameSettings[level as LevelNames];
 
-    const newPlayerField = emptyFieldGenerator(size, CellState.hidden);
+    const newPlayerField = generateFieldWithDefaultState(
+      size,
+      CellState.hidden
+    );
     setPlayerField([...newPlayerField]);
   };
 

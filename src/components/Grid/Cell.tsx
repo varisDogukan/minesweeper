@@ -37,7 +37,7 @@ export default function Cell({ children, coords, ...rest }: CellProps) {
     onMouseUp,
     onMouseLeave: onMouseUp,
     mouseDown,
-    "data-testid": `${children}_${coords}`,
+    "data-testid": `${coords}`,
     role: "cell",
   };
 
@@ -64,9 +64,6 @@ function ComponentsMap({ children, ...rest }: ComponentsMapProp) {
   };
 
   switch (children) {
-    case CellState.empty:
-      return <RevealedFrame {...nonActiveCellProps} />;
-
     case CellState.bomb:
       return (
         <BombFrame {...nonActiveCellProps}>
@@ -139,7 +136,8 @@ const colors: { [key in CellType]: string } = {
 const RevealedFrame = styled(ClosedFrame)`
   border-color: #ddd;
   cursor: default;
-  color: ${({ children }) => colors[children as CellType] ?? transparent};
+  color: ${({ children }) =>
+    children === 0 ? transparent : colors[children as CellType] ?? transparent};
 
   &:hover {
     filter: brightness(1.1);
