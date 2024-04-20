@@ -16,7 +16,7 @@ export default function Grid({ children, ...rest }: GridProps) {
     <Wrapper size={children.length}>
       {children.map((row, y) =>
         row.map((cell, x) => (
-          <Cell key={`${x}_${y}_${cell}`} coords={[x, y]} {...rest}>
+          <Cell key={`${y}_${x}_${cell}`} coords={[y, x]} {...rest}>
             {cell}
           </Cell>
         ))

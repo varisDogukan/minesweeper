@@ -33,10 +33,16 @@ export function incrementNeibours(coords: Coords, field: Field): Field {
       }
     }
   }
-
   return field;
 }
 
+/**
+ * Open cell in the player field using game field info
+ * @param {Coords} coords
+ * @param {Field} playerField
+ * @param {Field} gameField
+ * @returns {Field}
+ */
 export function openCell(
   coords: Coords,
   playerField: Field,

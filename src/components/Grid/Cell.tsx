@@ -53,12 +53,14 @@ interface ComponentsMapProp {
   onMouseLeave: () => void;
   mouseDown: boolean;
   "data-testid"?: string;
+  role: string;
 }
 
 function ComponentsMap({ children, ...rest }: ComponentsMapProp) {
   const nonActiveCellProps = {
     onContextMenu: rest.onContextMenu,
     "data-testid": rest["data-testid"],
+    role: rest.role,
   };
 
   switch (children) {
@@ -107,7 +109,7 @@ export const ClosedFrame = styled.div<ClosedFrameProps>`
   width: 20px;
   height: 20px;
   background-color: #d1d1d1;
-  border: 0.6vh solid transparent;
+  border: 5px solid transparent;
   border-color: ${({ mouseDown = false }) =>
     mouseDown ? "transparent" : "white #9e9e9e #9e9e9e white"};
   transition: all 0.2s linear;
