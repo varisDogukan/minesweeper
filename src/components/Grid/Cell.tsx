@@ -86,7 +86,7 @@ function ComponentsMap({ children, ...rest }: ComponentsMapProp) {
       );
 
     case CellState.hidden:
-      return <ClosedFrame {...rest} />;
+      return <ClosedFrame {...rest}>{children}</ClosedFrame>;
 
     default:
       return <RevealedFrame {...nonActiveCellProps}>{children}</RevealedFrame>;
@@ -110,6 +110,7 @@ export const ClosedFrame = styled.div<ClosedFrameProps>`
   border-color: ${({ mouseDown = false }) =>
     mouseDown ? "transparent" : "white #9e9e9e #9e9e9e white"};
   transition: all 0.2s linear;
+  color: transparent;
 
   &:hover {
     filter: brightness(1.1);

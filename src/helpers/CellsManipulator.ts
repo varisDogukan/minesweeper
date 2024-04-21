@@ -67,7 +67,7 @@ export function openCell(
         const gameCell = gameField[y][x];
         const playerCell = playerField[y][x];
 
-        if (gameCell === CellState.empty && playerCell === CellState.hidden) {
+        if (gameCell === CellState.hidden && playerCell !== CellState.bomb) {
           playerField = openCell(coords, playerField, gameField);
         }
 
