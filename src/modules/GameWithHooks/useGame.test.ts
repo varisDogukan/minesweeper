@@ -15,10 +15,9 @@ const flatWithFilter = (field: Field, cond: number) =>
 describe("useGame test cases", () => {
   describe("GameWithHooks test cases", () => {
     describe("Render behaviour", () => {
-      it("Render game field by default", () => {
+      it("Render hook by default", () => {
         const { result } = renderHook(useGame);
-
-        const { isGameOver, isWin, level, playerField, settings } =
+        const { isGameOver, isWin, level, playerField, settings, gameField } =
           result.current;
 
         expect({ level, isGameOver, isWin, settings }).toStrictEqual({
@@ -29,6 +28,7 @@ describe("useGame test cases", () => {
         });
 
         expect(playerField).toHaveLength(9);
+        expect(flatWithFilter(gameField, b)).toHaveLength(10);
       });
       it("onChange game level handler", async () => {
         const { result } = renderHook(useGame);
@@ -121,8 +121,16 @@ describe("useGame test cases", () => {
           );
 
           act(onReset);
-          const { playerField: finalPlayerField } = result.current;
+          const {
+            playerField: finalPlayerField,
+            isWin,
+            gameField,
+            isGameOver,
+          } = result.current;
+          expect(isWin).toBe(false);
+          expect(isGameOver).toBe(false);
           expect(flatWithFilter(finalPlayerField, h)).toHaveLength(81);
+          waitFor(() => expect(flatWithFilter(gameField, h)).toHaveLength(10));
         });
       });
       describe("Game over behavior", () => {

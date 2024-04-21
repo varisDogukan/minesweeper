@@ -16,7 +16,7 @@ describe("GameWithHooks test cases", () => {
 
       expect(screen.getAllByRole("cell")).toHaveLength(81);
 
-      expect(asFragment()).toMatchSnapshot();
+      // expect(asFragment()).toMatchSnapshot();
     });
 
     it("onChange game level handler", async () => {

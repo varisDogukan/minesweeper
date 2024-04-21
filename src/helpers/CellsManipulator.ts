@@ -1,5 +1,10 @@
 import { Cell, CellState, Coords, Field } from "./Field";
 
+/**
+ * Get neighbour cells indexes
+ * @param {Coords} coords
+ * @returns {Record<string, [number, number]>}
+ */
 export function getNeigboursItems([y, x]: Coords): Record<
   string,
   [number, number]
@@ -16,25 +21,36 @@ export function getNeigboursItems([y, x]: Coords): Record<
   };
 }
 
+/**
+ * Check item in the field
+ * @param {Coords} coords
+ * @param {Field} field
+ * @returns {boolean}
+ */
 export function checkItemInField([y, x]: Coords, { length }: Field): boolean {
   return y >= 0 && x >= 0 && length - y > 0 && length - x > 0;
 }
 
-export function incrementNeibours(coords: Coords, field: Field): Field {
+/**
+ * Increment neighbour items for cell with coords
+ * @param {Coords} coords
+ * @param {Field} field
+ * @returns {Cell}
+ */
+export const incrementNeibours = (coords: Coords, field: Field): Field => {
   const items = getNeigboursItems(coords);
 
-  for (const item of Object.values(items)) {
-    if (checkItemInField(item, field)) {
-      const [y, x] = item;
+  for (const [y, x] of Object.values(items)) {
+    if (checkItemInField([y, x], field)) {
       const cell = field[y][x];
-
       if (cell < 8) {
         field[y][x] = (cell + 1) as Cell;
       }
     }
   }
+
   return field;
-}
+};
 
 /**
  * Open cell in the player field using game field info
