@@ -1,22 +1,25 @@
-import React from "react";
+import { useState, useCallback } from "react";
 
 export type SetMouseDownStatus = () => void;
 export type SetMouseUpStatus = () => void;
 
-export function useMouseDown(): [
+export const useMouseDown = (): [
   boolean,
   SetMouseDownStatus,
   SetMouseUpStatus,
-] {
-  const [mouseDown, setMouseDown] = React.useState(false);
+] => {
+  const [mouseDown, setMouseDown] = useState(false);
 
-  // React.useDebugValue(
-  //   `mouseDown: ${mouseDown}`,
-  //   (str) => `${str} ${new Date().toISOString()}`
-  // );
-
-  const onMouseDown = () => setMouseDown(true);
-  const onMouseUp = () => setMouseDown(false);
+  const onMouseDown = useCallback(
+    () => setMouseDown(true),
+    // Stryker disable next-line ArrayDeclaration
+    []
+  );
+  const onMouseUp = useCallback(
+    () => setMouseDown(false),
+    // Stryker disable next-line ArrayDeclaration
+    []
+  );
 
   return [mouseDown, onMouseDown, onMouseUp];
-}
+};

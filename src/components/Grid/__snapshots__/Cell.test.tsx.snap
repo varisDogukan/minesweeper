@@ -3,7 +3,7 @@
 exports[`Cell component check Cell Frame renders correctly 1`] = `
 <DocumentFragment>
   <div
-    class="css-qv4ty6"
+    class="css-1q0n4ib"
   />
 </DocumentFragment>
 `;
@@ -11,7 +11,7 @@ exports[`Cell component check Cell Frame renders correctly 1`] = `
 exports[`Cell component check Cell Frame renders correctly 2`] = `
 <DocumentFragment>
   <div
-    class="css-qv4ty6"
+    class="css-1q0n4ib"
   />
 </DocumentFragment>
 `;
@@ -19,7 +19,7 @@ exports[`Cell component check Cell Frame renders correctly 2`] = `
 exports[`Cell component check Cell Frame renders correctly 3`] = `
 <DocumentFragment>
   <div
-    class="css-qv4ty6"
+    class="css-1q0n4ib"
   />
 </DocumentFragment>
 `;
@@ -27,7 +27,7 @@ exports[`Cell component check Cell Frame renders correctly 3`] = `
 exports[`Cell component check Cell Frame renders correctly 4`] = `
 <DocumentFragment>
   <div
-    class="css-qv4ty6"
+    class="css-1q0n4ib"
   />
 </DocumentFragment>
 `;
@@ -35,7 +35,7 @@ exports[`Cell component check Cell Frame renders correctly 4`] = `
 exports[`Cell component check Cell Frame renders correctly 5`] = `
 <DocumentFragment>
   <div
-    class="css-qv4ty6"
+    class="css-1q0n4ib"
   />
 </DocumentFragment>
 `;
@@ -43,7 +43,7 @@ exports[`Cell component check Cell Frame renders correctly 5`] = `
 exports[`Cell component check Cell Frame renders correctly 6`] = `
 <DocumentFragment>
   <div
-    class="css-qv4ty6"
+    class="css-1q0n4ib"
   />
 </DocumentFragment>
 `;
@@ -51,7 +51,7 @@ exports[`Cell component check Cell Frame renders correctly 6`] = `
 exports[`Cell component check Cell Frame renders correctly 7`] = `
 <DocumentFragment>
   <div
-    class="css-qv4ty6"
+    class="css-1q0n4ib"
   />
 </DocumentFragment>
 `;
@@ -59,7 +59,7 @@ exports[`Cell component check Cell Frame renders correctly 7`] = `
 exports[`Cell component check Cell Frame renders correctly 8`] = `
 <DocumentFragment>
   <div
-    class="css-qv4ty6"
+    class="css-1q0n4ib"
   />
 </DocumentFragment>
 `;
@@ -67,7 +67,7 @@ exports[`Cell component check Cell Frame renders correctly 8`] = `
 exports[`Cell component check Cell Frame renders correctly 9`] = `
 <DocumentFragment>
   <div
-    class="css-qv4ty6"
+    class="css-1q0n4ib"
   />
 </DocumentFragment>
 `;
@@ -75,7 +75,7 @@ exports[`Cell component check Cell Frame renders correctly 9`] = `
 exports[`Cell component check Cell Frame renders correctly 10`] = `
 <DocumentFragment>
   <div
-    class="css-qv4ty6"
+    class="css-1q0n4ib"
   />
 </DocumentFragment>
 `;
@@ -83,7 +83,7 @@ exports[`Cell component check Cell Frame renders correctly 10`] = `
 exports[`Cell component check Cell Frame renders correctly 11`] = `
 <DocumentFragment>
   <div
-    class="css-qv4ty6"
+    class="css-1q0n4ib"
   />
 </DocumentFragment>
 `;
@@ -91,7 +91,7 @@ exports[`Cell component check Cell Frame renders correctly 11`] = `
 exports[`Cell component check Cell Frame renders correctly 12`] = `
 <DocumentFragment>
   <div
-    class="css-qv4ty6"
+    class="css-1q0n4ib"
   />
 </DocumentFragment>
 `;
@@ -99,7 +99,7 @@ exports[`Cell component check Cell Frame renders correctly 12`] = `
 exports[`Cell component check Cell Frame renders correctly 13`] = `
 <DocumentFragment>
   <div
-    class="css-qv4ty6"
+    class="css-1q0n4ib"
   />
 </DocumentFragment>
 `;
@@ -107,17 +107,21 @@ exports[`Cell component check Cell Frame renders correctly 13`] = `
 exports[`Cell component check Cell renders correctly 1`] = `
 <DocumentFragment>
   <div
-    class="css-1gv950s"
-    data-testid="0_1,1"
-  />
+    class="css-103121h"
+    data-testid="1,1"
+    role="cell"
+  >
+    0
+  </div>
 </DocumentFragment>
 `;
 
 exports[`Cell component check Cell renders correctly 2`] = `
 <DocumentFragment>
   <div
-    class="css-1n0ncjp"
-    data-testid="1_1,1"
+    class="css-1dokkwi"
+    data-testid="1,1"
+    role="cell"
   >
     1
   </div>
@@ -127,8 +131,9 @@ exports[`Cell component check Cell renders correctly 2`] = `
 exports[`Cell component check Cell renders correctly 3`] = `
 <DocumentFragment>
   <div
-    class="css-1h5yygc"
-    data-testid="2_1,1"
+    class="css-hxpcqh"
+    data-testid="1,1"
+    role="cell"
   >
     2
   </div>
@@ -138,8 +143,9 @@ exports[`Cell component check Cell renders correctly 3`] = `
 exports[`Cell component check Cell renders correctly 4`] = `
 <DocumentFragment>
   <div
-    class="css-bw3ns5"
-    data-testid="3_1,1"
+    class="css-x1wks9"
+    data-testid="1,1"
+    role="cell"
   >
     3
   </div>
@@ -149,8 +155,9 @@ exports[`Cell component check Cell renders correctly 4`] = `
 exports[`Cell component check Cell renders correctly 5`] = `
 <DocumentFragment>
   <div
-    class="css-1b4z6ax"
-    data-testid="4_1,1"
+    class="css-10uw94w"
+    data-testid="1,1"
+    role="cell"
   >
     4
   </div>
@@ -160,8 +167,9 @@ exports[`Cell component check Cell renders correctly 5`] = `
 exports[`Cell component check Cell renders correctly 6`] = `
 <DocumentFragment>
   <div
-    class="css-1ogd0fl"
-    data-testid="5_1,1"
+    class="css-1snmbr7"
+    data-testid="1,1"
+    role="cell"
   >
     5
   </div>
@@ -171,8 +179,9 @@ exports[`Cell component check Cell renders correctly 6`] = `
 exports[`Cell component check Cell renders correctly 7`] = `
 <DocumentFragment>
   <div
-    class="css-17u021h"
-    data-testid="6_1,1"
+    class="css-183elvv"
+    data-testid="1,1"
+    role="cell"
   >
     6
   </div>
@@ -182,8 +191,9 @@ exports[`Cell component check Cell renders correctly 7`] = `
 exports[`Cell component check Cell renders correctly 8`] = `
 <DocumentFragment>
   <div
-    class="css-xw24l6"
-    data-testid="7_1,1"
+    class="css-1okt1ig"
+    data-testid="1,1"
+    role="cell"
   >
     7
   </div>
@@ -193,8 +203,9 @@ exports[`Cell component check Cell renders correctly 8`] = `
 exports[`Cell component check Cell renders correctly 9`] = `
 <DocumentFragment>
   <div
-    class="css-skduyf"
-    data-testid="8_1,1"
+    class="css-1bhuacv"
+    data-testid="1,1"
+    role="cell"
   >
     8
   </div>
@@ -204,11 +215,12 @@ exports[`Cell component check Cell renders correctly 9`] = `
 exports[`Cell component check Cell renders correctly 10`] = `
 <DocumentFragment>
   <div
-    class="css-arhbjg"
-    data-testid="9_1,1"
+    class="css-16bwjvk"
+    data-testid="1,1"
+    role="cell"
   >
     <div
-      class="css-3tubcw"
+      class="css-1f7ob6g"
     />
   </div>
 </DocumentFragment>
@@ -217,20 +229,24 @@ exports[`Cell component check Cell renders correctly 10`] = `
 exports[`Cell component check Cell renders correctly 11`] = `
 <DocumentFragment>
   <div
-    class="css-hczdls"
-    data-testid="10_1,1"
-  />
+    class="css-1yh9r0j"
+    data-testid="1,1"
+    role="cell"
+  >
+    10
+  </div>
 </DocumentFragment>
 `;
 
 exports[`Cell component check Cell renders correctly 12`] = `
 <DocumentFragment>
   <div
-    class="css-hczdls"
-    data-testid="11_1,1"
+    class="css-1yh9r0j"
+    data-testid="1,1"
+    role="cell"
   >
     <div
-      class="css-xf858y"
+      class="css-1duh8q7"
     />
   </div>
 </DocumentFragment>
@@ -239,11 +255,12 @@ exports[`Cell component check Cell renders correctly 12`] = `
 exports[`Cell component check Cell renders correctly 13`] = `
 <DocumentFragment>
   <div
-    class="css-hczdls"
-    data-testid="12_1,1"
+    class="css-1yh9r0j"
+    data-testid="1,1"
+    role="cell"
   >
     <div
-      class="css-qmyrbn"
+      class="css-11asmo2"
     />
   </div>
 </DocumentFragment>

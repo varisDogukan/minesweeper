@@ -13,6 +13,7 @@ const config = {
   mutate: [
     "src/**/*.ts?(x)",
     "!src/**/*@(.test|.spec|Spec|stories|styled).ts?(x)",
+    "!src/**/__mocks__/**/*",
     "!__mocks__",
     "!__snapshots__",
   ],

@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">3.57% </span>
+                <span class="strong">50% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>1/28</span>
+                <span class='fraction'>14/28</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">45% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/20</span>
+                <span class='fraction'>9/20</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/4</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">3.57% </span>
+                <span class="strong">50% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>1/28</span>
+                <span class='fraction'>14/28</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line medium'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -174,7 +174,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">50x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -193,7 +193,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">400x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -203,20 +203,18 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">50x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">50x</span>
+<span class="cline-any cline-yes">400x</span>
+<span class="cline-any cline-yes">334x</span>
+<span class="cline-any cline-yes">334x</span>
+<span class="cline-any cline-yes">317x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">50x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -229,11 +227,13 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -270,11 +270,11 @@
  * @param {Coords} coords
  * @returns {Record&lt;string, [number, number]&gt;}
  */
-export function <span class="fstat-no" title="function not covered" >getNeigboursItems(</span>[y, x]: Coords): Record&lt;
+export function getNeigboursItems([y, x]: Coords): Record&lt;
   string,
   [number, number]
 &gt; {
-<span class="cstat-no" title="statement not covered" >  return {</span>
+  return {
     top: [y - 1, x],
     topRight: [y - 1, x + 1],
     right: [y, x + 1],
@@ -292,8 +292,8 @@ export function <span class="fstat-no" title="function not covered" >getNeigbour
  * @param {Field} field
  * @returns {boolean}
  */
-export function <span class="fstat-no" title="function not covered" >checkItemInField(</span>[y, x]: Coords, { length }: Field): boolean {
-<span class="cstat-no" title="statement not covered" >  return y &gt;= 0 &amp;&amp; x &gt;= 0 &amp;&amp; length - y &gt; 0 &amp;&amp; length - x &gt; 0;</span>
+export function checkItemInField([y, x]: Coords, { length }: Field): boolean {
+  return y &gt;= 0 &amp;&amp; x &gt;= 0 &amp;&amp; length - y &gt; 0 &amp;&amp; length - x &gt; 0;
 }
 &nbsp;
 /**
@@ -302,19 +302,19 @@ export function <span class="fstat-no" title="function not covered" >checkItemIn
  * @param {Field} field
  * @returns {Cell}
  */
-export const incrementNeibours = <span class="fstat-no" title="function not covered" >(c</span>oords: Coords, field: Field): Field =&gt; {
-  const items = <span class="cstat-no" title="statement not covered" >getNeigboursItems(coords);</span>
+export const incrementNeibours = (coords: Coords, field: Field): Field =&gt; {
+  const items = getNeigboursItems(coords);
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  for (const [y, x] of Object.values(items)) {</span>
-<span class="cstat-no" title="statement not covered" >    if (checkItemInField([y, x], field)) {</span>
-      const cell = <span class="cstat-no" title="statement not covered" >field[y][x];</span>
-<span class="cstat-no" title="statement not covered" >      if (cell &lt; 8) {</span>
-<span class="cstat-no" title="statement not covered" >        field[y][x] = (cell + 1) as Cell;</span>
+  for (const [y, x] of Object.values(items)) {
+    if (checkItemInField([y, x], field)) {
+      const cell = field[y][x];
+      if (cell &lt; 8) {
+        field[y][x] = (cell + 1) as Cell;
       }
     }
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return field;</span>
+  return field;
 };
 &nbsp;
 /**
@@ -324,16 +324,16 @@ export const incrementNeibours = <span class="fstat-no" title="function not cove
  * @param {Field} gameField
  * @returns {Field}
  */
-export function <span class="fstat-no" title="function not covered" >openCell(</span>
+export function openCell(
   coords: Coords,
   playerField: Field,
   gameField: Field
 ): Field {
-  const [y, x] = <span class="cstat-no" title="statement not covered" >coords;</span>
-  const gameCell = <span class="cstat-no" title="statement not covered" >gameField[y][x];</span>
+  const [y, x] = coords;
+  const gameCell = gameField[y][x];
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  if (gameCell === CellState.bomb) {</span>
-<span class="cstat-no" title="statement not covered" >    throw new Error("Game Over");</span>
+  <span class="missing-if-branch" title="else path not taken" >E</span>if (gameCell === CellState.bomb) {
+    throw new Error("Game Over");
   }
 &nbsp;
 <span class="cstat-no" title="statement not covered" >  if (gameCell === CellState.empty) {</span>
@@ -370,7 +370,7 @@ export function <span class="fstat-no" title="function not covered" >openCell(</
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2024-04-21T11:47:02.282Z
+                at 2024-04-24T08:17:21.665Z
             </div>
         <script src="../prettify.js"></script>
         <script>

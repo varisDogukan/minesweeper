@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">5.55% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>1/18</span>
+                <span class='fraction'>18/18</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/7</span>
+                <span class='fraction'>7/7</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/3</span>
+                <span class='fraction'>3/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">6.66% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>1/15</span>
+                <span class='fraction'>15/15</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -154,34 +154,34 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">34x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">26x</span>
+<span class="cline-any cline-yes">210x</span>
+<span class="cline-any cline-yes">32x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">32x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">32x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">210x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { incrementNeibours } from "./CellsManipulator";
 &nbsp;
@@ -210,38 +210,38 @@ export const CellState: Record&lt;string, Cell&gt; = {
  * @param {Cell} state
  * @returns {Field}
  */
-export function <span class="fstat-no" title="function not covered" >generateFieldWithDefaultState(</span>
+export function generateFieldWithDefaultState(
   size: number,
-  state: Cell = <span class="branch-0 cbranch-no" title="branch not covered" >CellState.empty</span>
+  state: Cell = CellState.empty
 ): Field {
-<span class="cstat-no" title="statement not covered" >  return new Array(size).fill(null).map(<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >new Array(size).fill(state))</span>;</span>
+  return new Array(size).fill(null).map(() =&gt; new Array(size).fill(state));
 }
 &nbsp;
-export function <span class="fstat-no" title="function not covered" >fieldGenerator(</span>size: number, probability: number): Field {
-<span class="cstat-no" title="statement not covered" >  if (probability &lt; 0 || probability &gt; 1) {</span>
-<span class="cstat-no" title="statement not covered" >    throw new Error("Probability must be between 0 and 1");</span>
+export function fieldGenerator(size: number, probability: number): Field {
+  if (probability &lt; 0 || probability &gt; 1) {
+    throw new Error("Probability must be between 0 and 1");
   }
 &nbsp;
-  let unprocessedCells = <span class="cstat-no" title="statement not covered" >size * size;</span>
-  let restCellsWithBombs = <span class="cstat-no" title="statement not covered" >unprocessedCells * probability;</span>
+  let unprocessedCells = size * size;
+  let restCellsWithBombs = unprocessedCells * probability;
 &nbsp;
-  const result: Field = <span class="cstat-no" title="statement not covered" >generateFieldWithDefaultState(size);</span>
+  const result: Field = generateFieldWithDefaultState(size);
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  for (let y = <span class="cstat-no" title="statement not covered" >0;</span> y &lt; size; y++) {</span>
-<span class="cstat-no" title="statement not covered" >    for (let x = <span class="cstat-no" title="statement not covered" >0;</span> x &lt; size; x++) {</span>
-<span class="cstat-no" title="statement not covered" >      if (restCellsWithBombs / unprocessedCells &gt; Math.random()) {</span>
-<span class="cstat-no" title="statement not covered" >        result[y][x] = CellState.bomb;</span>
+  for (let y = 0; y &lt; size; y++) {
+    for (let x = 0; x &lt; size; x++) {
+      if (restCellsWithBombs / unprocessedCells &gt; Math.random()) {
+        result[y][x] = CellState.bomb;
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        incrementNeibours([y, x], result);</span>
+        incrementNeibours([y, x], result);
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        restCellsWithBombs--;</span>
+        restCellsWithBombs--;
       }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >      unprocessedCells--;</span>
+      unprocessedCells--;
     }
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return result;</span>
+  return result;
 }
 &nbsp;</pre></td></tr></table></pre>
 
@@ -250,7 +250,7 @@ export function <span class="fstat-no" title="function not covered" >fieldGenera
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2024-04-21T11:33:49.866Z
+                at 2024-04-24T08:14:43.151Z
             </div>
         <script src="prettify.js"></script>
         <script>

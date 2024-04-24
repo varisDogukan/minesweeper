@@ -10,7 +10,7 @@ export interface GameOverProps extends FrameProps {
 
 export const GameOver: FC<GameOverProps> = ({ onClick, isWin }) => (
   <Frame onClick={onClick} isWin={isWin}>
-    {isWin ? "😎" : "🙁"}
+    {isWin ? "😎" : "😓"}
   </Frame>
 );
 

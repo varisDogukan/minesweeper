@@ -4,8 +4,12 @@ import userEvent from "@testing-library/user-event";
 
 import { GameOver } from "./GameOver";
 
+beforeEach(() => {
+  jest.clearAllMocks();
+});
+
 describe("Game Over test cases", () => {
-  it("GameOver render win correctly", () => {
+  it("GameOver render win correctly", async () => {
     const onReset = jest.fn();
 
     const { asFragment } = render(<GameOver onClick={onReset} isWin={true} />);
@@ -14,22 +18,23 @@ describe("Game Over test cases", () => {
 
     expect(element).toBeInTheDocument();
 
-    userEvent.click(element);
+    await userEvent.click(element);
 
     expect(onReset).toHaveBeenCalled();
 
     expect(asFragment()).toMatchSnapshot();
   });
-  it("GameOver render fail correctly", () => {
+
+  it("GameOver render fail correctly", async () => {
     const onReset = jest.fn();
 
     const { asFragment } = render(<GameOver onClick={onReset} isWin={false} />);
 
-    const element = screen.getByText("🙁");
+    const element = screen.getByText("😓");
 
     expect(element).toBeInTheDocument();
 
-    userEvent.click(element);
+    await userEvent.click(element);
 
     expect(onReset).toHaveBeenCalled();
 

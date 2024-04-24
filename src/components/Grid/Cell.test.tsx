@@ -5,6 +5,10 @@ import { CellState, Coords } from "@/helpers/Field";
 
 import Cell, { isActiveCell, ClosedFrame } from "./Cell";
 
+beforeEach(() => {
+  jest.clearAllMocks();
+});
+
 describe("Cell component check", () => {
   const coords: Coords = [1, 1];
 
