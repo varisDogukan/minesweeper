@@ -1,10 +1,12 @@
 import React from "react";
 import GameWithHooks from "./modules/GameWithHooks";
 
-export default function App() {
+const App = () => {
   return (
     <>
       <GameWithHooks />
     </>
   );
-}
+};
+
+export default App;
