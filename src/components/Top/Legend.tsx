@@ -4,20 +4,14 @@ import styled from "@emotion/styled";
 export interface LegendProps {
   feature: string;
   firstAction: string;
-  secondAction: string;
 }
 
-export default function Legend({
-  feature,
-  firstAction,
-  secondAction,
-}: LegendProps) {
+export default function Legend({ feature, firstAction }: LegendProps) {
   return (
     <Parent>
       <strong>{feature}: </strong>
       <FlagComboParent>
-        <FirstAction>{firstAction}</FirstAction> +{" "}
-        <SecondAction>{secondAction}</SecondAction>
+        <FirstAction>{firstAction}</FirstAction>
       </FlagComboParent>
     </Parent>
   );
@@ -35,8 +29,4 @@ const Parent = styled.legend`
 
 const FirstAction = styled.span`
   color: #ec433c;
-`;
-
-const SecondAction = styled.span`
-  color: #2a48ec;
 `;

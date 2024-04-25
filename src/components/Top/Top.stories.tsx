@@ -17,6 +17,5 @@ export const GameLegend: Story = {
     children: "Minesweeper",
     feature: "Flag",
     firstAction: "Ctrl",
-    secondAction: "Click",
   },
 };

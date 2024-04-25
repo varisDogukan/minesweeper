@@ -16,6 +16,5 @@ export const GameLegend: Story = {
   args: {
     feature: "Flag",
     firstAction: "Ctrl",
-    secondAction: "Click",
   },
 };

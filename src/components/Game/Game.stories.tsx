@@ -34,15 +34,16 @@ export const GameExample: Story = {
   args: {
     children: (
       <>
-        <Top feature='Flag' firstAction='right click' secondAction='click'>
+        <Top feature='Flag' firstAction='right click'>
           Minesweeper
         </Top>
         <GameArea>
           <Scoreboard
             time='000'
             levels={["beginner", "intermediate", "expert"]}
-            mines='010'
+            bombs='010'
             onReset={() => null}
+            onChangeLevel={() => null}
           />
           <GameOver onClick={() => null} isWin={true} />
           <Grid onClick={() => null} onContextMenu={() => null}>

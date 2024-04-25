@@ -8,7 +8,8 @@ import {
   Field,
 } from "@/helpers/Field";
 import { LevelNames, GameSettings } from "../GameSettings";
-import { openCell } from "@/helpers/CellsManipulator";
+import openCell from "@/helpers/openCell";
+import setFlag from "@/helpers/setFlag";
 
 interface ReturnType {
   level: LevelNames;
@@ -18,6 +19,7 @@ interface ReturnType {
   playerField: Field;
   gameField: Field;
   onClick: (coords: Coords) => void;
+  onContextMenu: (coords: Coords) => void;
   onChangeLevel: (level: LevelNames) => void;
   onReset: () => void;
 }
@@ -46,6 +48,11 @@ export default function useGame(): ReturnType {
       setPlayerField([...gameField]);
       setIsGameOver(true);
     }
+  };
+
+  const onContextMenu = (coords: Coords) => {
+    const newPlayerField = setFlag(coords, playerField, gameField);
+    setPlayerField([...newPlayerField]);
   };
 
   const resetHandler = ([size, bombs]: [number, number]) => {
@@ -77,6 +84,7 @@ export default function useGame(): ReturnType {
     playerField,
     gameField,
     onClick,
+    onContextMenu,
     onChangeLevel,
     onReset,
   };

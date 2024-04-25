@@ -1,5 +1,5 @@
 import React from "react";
-import { render, screen, waitFor } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 
 import GameWithHooks from "./GameWithHooks";
@@ -12,6 +12,7 @@ jest.mock("@/helpers/Field");
 const mockOnClick = jest.fn();
 const mockOnChangeLevel = jest.fn();
 const mockOnReset = jest.fn();
+const mockOnContextMenu = jest.fn();
 
 jest.mock("./useGame", () => ({
   __esModule: true,
@@ -25,6 +26,7 @@ jest.mock("./useGame", () => ({
       [10, 10],
     ],
     onClick: mockOnClick,
+    onContextMenu: mockOnContextMenu,
     onChangeLevel: mockOnChangeLevel,
     onReset: mockOnReset,
   }),
@@ -47,6 +49,17 @@ describe("GameWithHooks test cases", () => {
 
       await userEvent.click(screen.getByTestId("0,0"));
       expect(mockOnClick).toHaveBeenCalled();
+    });
+
+    it("Context menu handler on a cell works fine", async () => {
+      render(<GameWithHooks />);
+
+      const cell = screen.getByTestId("0,0");
+      await userEvent.pointer([
+        { keys: "[MouseRight]", target: cell }, // Sağ tuşa bas
+        { keys: "[/MouseRight]", target: cell }, // Sağ tuşu bırak
+      ]);
+      expect(mockOnContextMenu).toHaveBeenCalled();
     });
 
     it("Reset handler works fine", async () => {

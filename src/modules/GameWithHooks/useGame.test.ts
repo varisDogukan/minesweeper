@@ -63,6 +63,16 @@ describe("useGame test cases", () => {
         );
       });
 
+      it("Context menu handler", () => {
+        const { result } = renderHook(useGame);
+
+        const { playerField, onContextMenu } = result.current;
+        act(() => onContextMenu([0, 0]));
+
+        const { playerField: newPlayerField } = result.current;
+        expect(flatWithFilter(newPlayerField, f)).toHaveLength(1);
+      });
+
       it("Click to the non-empty cells area", async () => {
         const { result } = renderHook(useGame);
 

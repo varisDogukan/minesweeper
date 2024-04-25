@@ -14,6 +14,7 @@ export default function GameWithHooks() {
     settings,
     playerField,
     onClick,
+    onContextMenu,
     onChangeLevel,
     onReset,
   } = useGame();
@@ -22,7 +23,7 @@ export default function GameWithHooks() {
 
   return (
     <Wrapper>
-      <Top feature='Flag' firstAction='ctrl' secondAction='click'>
+      <Top feature='Flag' firstAction='right click'>
         Minesweeper
       </Top>
       <GameArea>
@@ -39,7 +40,7 @@ export default function GameWithHooks() {
           onReset={onReset}
         />
         {isGameOver && <GameOver isWin={isWin} onClick={onReset} />}
-        <Grid onClick={onClick} onContextMenu={() => null}>
+        <Grid onClick={onClick} onContextMenu={onContextMenu}>
           {playerField}
         </Grid>
       </GameArea>

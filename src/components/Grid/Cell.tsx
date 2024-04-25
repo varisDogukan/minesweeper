@@ -157,13 +157,13 @@ const BombFrame = styled(RevealedFrame)`
 `;
 
 const Flag = styled.div`
-  width: 5px;
-  height: 5px;
-  border-top: 0.5vw solid transparent;
-  border-bottom: 0.5vw solid transparent;
-  border-left: 0.5vw solid #ec433c;
+  width: 1px;
+  height: 1px;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid #ec433c;
 `;
 
 const WeakFlag = styled(Flag)`
-  border-left: 0.5vw solid #f19996;
+  border-left: 5px solid #f19996;
 `;
